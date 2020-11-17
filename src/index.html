@@ -1,251 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prodan design</title>
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
-  <script defer type="module" src="./index.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodan design</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script defer type="module" src="./index.js"></script>
+  </head>
 
-<body class="page">
-  <header class="header">
-    <a href="." class="header__logo-section">
-      <img
-        src="./images/icons/logo.png"
-        alt="Logo"
-        class="header__logo"
-      >
-    </a>
+  <body class="page">
+    <header class="header">
+      <a href="." class="header__logo-section">
+        <img
+          src="./images/icons/logo.png"
+          alt="Logo"
+          class="header__logo"
+        >
+      </a>
 
-    <div class="header__section">
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#about">who we are</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#projects">our projects</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#services">price and services</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#work">how we work</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contacts">contacts</a>
-          </li>
-        </ul>
+      <div class="header__section">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about">who we are</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">our projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">price and services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#work">how we work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">contacts</a>
+            </li>
+          </ul>
 
-        <div class="nav__list-mobile" id="list-mobile">
-          <a class="nav__link-mobile" href="#about">who we are</a>
-          <a class="nav__link-mobile" href="#projects">our projects</a>
-          <a class="nav__link-mobile" href="#services">price and services</a>
-          <a class="nav__link-mobile" href="#work">how we work</a>
-          <a class="nav__link-mobile" href="#contacts">contacts</a>
+          <div class="nav__list-mobile" id="list-mobile">
+            <a class="nav__link-mobile" href="#about">who we are</a>
+            <a class="nav__link-mobile" href="#projects">our projects</a>
+            <a class="nav__link-mobile" href="#services">price and services</a>
+            <a class="nav__link-mobile" href="#work">how we work</a>
+            <a class="nav__link-mobile" href="#contacts">contacts</a>
+          </div>
+        </nav>
+
+        <div class="language-selector">
+          <a href="#" class="language language--main">en</a>
+          <a href="#" class="language language--additional">ru</a>
         </div>
-      </nav>
 
-      <div class="language-selector">
-        <a href="#" class="language language--main">en</a>
-        <a href="#" class="language language--additional">ru</a>
+        <a href="#" class="socials socials--facebook"></a>
+        <a href="#" class="socials socials--instagram"></a>
       </div>
 
-      <a href="#" class="socials socials--facebook"></a>
-      <a href="#" class="socials socials--instagram"></a>
+      <input
+        type="checkbox"
+        name="toggle"
+        id="toggle"
+        class="header__toggle"
+      >
+      <label
+        for="toggle"
+        class="header__toggle-label">
+      </label>
+    </header>
+
+    <div class="logo-mobile">
+      <img
+        src="./images/icons/logo-mobile.png"
+        alt="Logo"
+        class="logo-mobile__img"
+      >
     </div>
 
-    <input
-      type="checkbox"
-      name="toggle"
-      id="toggle"
-      class="header__toggle"
-    >
-    <label
-      for="toggle"
-      class="header__toggle-label">
-    </label>
-  </header>
-
-  <div class="logo-mobile">
-    <img
-      src="./images/icons/logo-mobile.png"
-      alt="Logo"
-      class="logo-mobile__img"
-    >
-  </div>
-
-  <main>
-    <section class="promo" id="about">
-      <div class="promo__info">
-        <h1 class="promo__heading">Nelly Prodan</h1>
-        <p class="promo__text">interior architecture design</p>
-      </div>
-
-      <div class="slider">
-        
-        <div class="slider__navigation">
-          <button
-            type="button"
-            class="slider__button slider__button--previous" 
-            id="button-previous"
-          >
-          </button>
-          <button
-            type="button"
-            class="slider__button slider__button--next" 
-            id="button-next"
-          >
-          </button>
+    <main>
+      <section class="promo" id="about">
+        <div class="promo__info">
+          <h1 class="promo__heading">Nelly Prodan</h1>
+          <p class="promo__text">interior architecture design</p>
         </div>
 
+        <div class="slider">
+          <div class="slider__navigation">
+            <button
+              type="button"
+              class="slider__button slider__button--previous" 
+              id="button-previous"
+            >
+            </button>
+            <button
+              type="button"
+              class="slider__button slider__button--next" 
+              id="button-next"
+            >
+            </button>
+          </div>
 
-        <div class="slider__images">
-          <a class="slider__link" href="#">
+          <div class="slider__images"></div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="projects__category-selector">
+          Choose category
+          <div class="projects__categories">
+            <a href="#" class="projects__category">Living interiors</a>
+            <a href="#" class="projects__category">Public interiors</a>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a class="gallery__link" href="#">
             <img
               src="./images/photo1.jpg"
-              alt=""
-              class="slider__image"
+              alt="Office in Kyiv"
+              class="gallery__image"
             >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Public Interiors</p>
+              <p class="gallery__image-title">Office in Kyiv</p>
+            </div>
           </a>
 
-          <a class="slider__link" href="#">
+          <a class="gallery__link" href="#">
             <img
               src="./images/photo2.jpg"
-              alt=""
-              class="slider__image"
+              alt="Space Odyssey"
+              class="gallery__image"
             >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Space Odyssey</p>
+            </div>
           </a>
 
-          <a class="slider__link" href="#">
+          <a class="gallery__link" href="#">
             <img
               src="./images/photo3.jpg"
-              alt=""
-              class="slider__image"
+              alt="Minimal mood"
+              class="gallery__image"
             >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Minimal mood</p>
+            </div>
           </a>
 
-          <a class="slider__link" href="#">
+          <a class="gallery__link" href="#">
             <img
               src="./images/photo4.jpg"
-              alt=""
-              class="slider__image"
+              alt="Kvartet 2"
+              class="gallery__image"
             >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Kvartet 2</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo5.jpg"
+              alt="Smart Plaza"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Smart Plaza</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo6.jpg"
+              alt="Ideco Office, Shanghai"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Public Interiors</p>
+              <p class="gallery__image-title">Ideco Office, Shanghai</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo7.jpg"
+              alt="The Hideout"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">The Hideout</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo8.jpg"
+              alt="Parkove Misto"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Parkove Misto</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo9.jpg"
+              alt="Basement for teens in Boston, MA"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Basement for teens in Boston, MA</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo10.jpg"
+              alt="A light and spacious house outside of Kyiv"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">A light and spacious house outside of Kyiv</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo11.jpg"
+              alt="Apartment at Zlatoustovska"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Apartment at Zlatoustovska</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo12.jpg"
+              alt="Park Avenue VIP"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Park Avenue VIP</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo13.jpg"
+              alt="Basement for teens in Lexington, MA"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Basement for teens in Lexington, MA</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo14.jpg"
+              alt="Podil Apartment"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Podil Apartment</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo15.jpg"
+              alt="49 shades of grey"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">49 shades of grey</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo16.jpg"
+              alt="Venetsiya"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Venetsiya</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo17.jpg"
+              alt="Pokrovsky Posad"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Pokrovsky Posad</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo18.jpg"
+              alt="Apartment for young family in &quot;Comfort Town&quot;"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Living Interiors</p>
+              <p class="gallery__image-title">Apartment for young family in "Comfort Town"</p>
+            </div>
+          </a>
+
+          <a class="gallery__link" href="#">
+            <img
+              src="./images/photo19.jpg"
+              alt="Ulichanya Eda"
+              class="gallery__image"
+            >
+            <div class="gallery__image-info">
+              <p class="gallery__image-category">Public Interiors</p>
+              <p class="gallery__image-title">Ulichanya Eda</p>
+            </div>
           </a>
         </div>
-
-
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="projects__category-selector">
-        Choose category
-        <div class="projects__categories">
-          <a href="#" class="projects__category">Living interiors</a>
-          <a href="#" class="projects__category">Public interiors</a>
-        </div>
-      </div>
-
-      <div class="gallery">
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo1.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo2.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo3.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo4.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo5.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo6.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo7.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-
-        <a class="gallery__link" href="#">
-          <img
-            src="./images/photo8.jpg"
-            alt=""
-            class="gallery__image"
-          >
-          <div class="gallery__image-info">
-            <p class="gallery__image-category">Public Interiors</p>
-            <p class="gallery__image-title">Office in Kyiv</p>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
