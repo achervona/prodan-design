@@ -1,0 +1,25 @@
+{
+  "name": "prodan-design",
+  "version": "1.0.0",
+  "description": "Prodan design test task",
+  "main": "src/main.js",
+  "scripts": {
+    "lint": "eslint",
+    "compile-sass": "node-sass src/styles/main.scss css/style.css --watch"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "eslint": "^7.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/achervona/prodan-design.git"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

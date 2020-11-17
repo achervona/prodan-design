@@ -1,0 +1,16 @@
+$page-color: #f2f2f2;
+$text-color-main: #242424;
+$text-color-option: #484848;
+$separator-color: #c8c8c8;
+
+
+@mixin separator($width) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: $width;
+  height: 1px;
+  transform: translateX(-50%);
+
+  background-color: $separator-color;
+}

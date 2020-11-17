@@ -1,0 +1,59 @@
+@import "_utils.scss";
+
+.language-selector {
+  position: relative;
+  width: 80px;
+  margin-left: 10px;
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 51%;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    transform: translate(0, -51%);
+
+    background: url("../images/icons/arrow_down.png") no-repeat center;
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:hover > .language--additional {
+    display: block;
+  }
+
+  .language {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+
+    color: $text-color-main;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &--additional {
+      display: none;
+      position: absolute;
+      top: 100%;
+
+      background-color: white;
+    }
+
+    &--additional::before {
+      content: "";
+      @include separator(70%);
+    }
+  }
+
+  @media (max-width: 1140px) {
+    & {
+      display: none;
+    }
+  }
+}

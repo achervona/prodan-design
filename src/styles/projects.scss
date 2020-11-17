@@ -1,0 +1,62 @@
+@import "_utils.scss";
+
+.projects {
+  &__category-selector {
+    position: relative;
+    width: 220px;
+    margin: auto;
+    z-index: 1;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 76px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      transform: translate(0, -50%);
+
+      background: url("../images/icons/arrow_down.png") no-repeat center;
+    }
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  &__categories {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    background-color: white;
+
+    &::before {
+      content: "";
+      @include separator(85%);
+    }
+  }
+
+  &__category {
+    display: block;
+
+    color: $text-color-option;
+  }
+
+  &__category-selector:hover > .projects__categories {
+    display: block;
+  }
+  
+  @media (max-width: 1140px) {
+    &__category-selector,
+    &__categories::before {
+      width: 100%;
+    }
+  }
+}

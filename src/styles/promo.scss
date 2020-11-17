@@ -1,0 +1,44 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  padding: 85px 10%;
+
+  &__info {
+    max-width: 400px;
+
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  &__heading {
+    margin-top: 100px;
+
+    font-size: 70px;
+    line-height: 1em;
+  }
+
+  &__text {
+    margin-top: 42px;
+
+    font-size: 16px;
+  }
+
+  @media (max-width: 1300px) {
+    &__heading {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    & {
+      display: none;
+    }
+  }
+}

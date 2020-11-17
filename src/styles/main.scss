@@ -1,0 +1,38 @@
+@import "_reset.scss";
+@import "_utils.scss";
+@import "header";
+@import "nav.scss";
+@import "logo-mobile.scss";
+@import "language-selector.scss";
+@import "socials.scss";
+@import "promo.scss";
+@import "gallery.scss";
+@import "projects.scss";
+@import "slider.scss";
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+  url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "GothamProBold", sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+.page {
+  background-color: $page-color;
+  color: $text-color-main;
+}
